@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1 Partie 1</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <canvas id="myCanvas" width="500" height="500">
+    </canvas>
+    <script>
+    var c = document.getElementById('myCanvas');
+    var ctx = c.getContext('2d');
+    /*Toit de la maison*/
+    ctx.beginPath();
+    ctx.moveTo(250,10);
+    ctx.lineTo(400,150);
+    ctx.lineTo(100,150);
+    ctx.lineTo(250,10);
+    ctx.closePath();
+    ctx.fillStyle = 'peru';
+    ctx.fill();
+    /*Structure de la maison*/
+    ctx.beginPath();
+    ctx.moveTo(100,150);
+    ctx.lineTo(400,150);
+    ctx.lineTo(400,450);
+    ctx.lineTo(100,450);
+    ctx.closePath();
+    ctx.fillStyle = '#58ACFA';
+    ctx.fill();
+    /*Fenêtre 1*/
+    ctx.beginPath();
+    ctx.moveTo(150,200);
+    ctx.lineTo(200,200);
+    ctx.lineTo(200,250);
+    ctx.lineTo(150,250);
+    ctx.closePath();
+    ctx.fillStyle = 'grey';
+    ctx.fill();
+    /*Fenêtre 2*/
+    ctx.beginPath();
+    ctx.moveTo(300,200);
+    ctx.lineTo(350,200);
+    ctx.lineTo(350,250);
+    ctx.lineTo(300,250);
+    ctx.closePath();
+    ctx.fillStyle = 'grey';
+    ctx.fill();
+    /*Porte*/
+    ctx.beginPath();
+    ctx.moveTo(225,350);
+    ctx.lineTo(280,350);
+    ctx.lineTo(280,450);
+    ctx.lineTo(225,450);
+    ctx.closePath();
+    ctx.fillStyle = 'grey';
+    ctx.fill();
+    </script>
+  </body>
+</html>
